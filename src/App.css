@@ -24,6 +24,14 @@
   color: white;
 }
 
+.content-style {
+  align-items: center;
+  display: flex;
+  padding: 40px;
+  height: 90vh;
+  justify-content: space-between;
+}
+
 .App-link {
   color: #61dafb;
 }
