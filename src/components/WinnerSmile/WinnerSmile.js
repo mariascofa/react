@@ -1,6 +1,5 @@
 const WinnerSmile = (props) => {
   const winner = props.winner;
-  console.log(winner);
 
   const emojiData = {
     smile_0: "\u{1F643}",
