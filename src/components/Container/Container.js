@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "../Navigation/Navigarion";
-import Content from "../Content/Content";
+import HomeContent from "../Home/Home";
 import "./cont.css";
 
 class Container extends React.Component {
@@ -8,7 +8,7 @@ class Container extends React.Component {
     return (
       <div className="container">
         <Navigation />
-        <Content />
+        <HomeContent />
       </div>
     );
   }
