@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
-import PageContent from "./components/PageContent/PageContent";
+import { Outlet  } from "react-router-dom";
 
 const App = () => {
   return (
@@ -9,7 +9,9 @@ const App = () => {
       <Header />
       <div className="main-container">
         <Navigation />
-        <PageContent />
+        <div className="content">
+          <Outlet />
+        </div>
       </div>
     </div>
   );

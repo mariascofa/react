@@ -16,3 +16,11 @@ code {
   display: flex;
   background-color: rgb(177, 177, 177);
 }
+
+.content {
+  flex-grow: 1;
+  padding: 60px;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
