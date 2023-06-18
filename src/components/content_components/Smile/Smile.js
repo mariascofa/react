@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import WinnerSmile from "../WinnerSmile/WinnerSmile";
 import "./smile.css";
 
-class Smiles extends React.Component {
+class Smile extends React.Component {
   state = {
     smile_0: 0,
     smile_1: 0,
@@ -61,4 +61,4 @@ class Smiles extends React.Component {
   }
 }
 
-export default Smiles;
+export default Smile;

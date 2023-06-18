@@ -1,18 +1,18 @@
 .navigation{
-    background-color: rgb(99, 77, 120);
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    width: 200px;
-    height: 100vh;
-    text-align: left;
-    margin: 0px;
+  background-color: rgb(99, 77, 120);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  width: 200px;
+  height: 100vh;
+  text-align: left;
+  margin: 0px;
 }
 
 .navigation ul li {
-    padding: 10px;
-    list-style-type: none;
-  }
-  
+  padding: 10px;
+  list-style-type: none;
+}
+
 .navigation li:hover {
 transform: translateX(-2px);
 }

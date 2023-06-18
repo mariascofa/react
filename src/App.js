@@ -1,11 +1,16 @@
+import React from 'react';
 import Header from "./components/Header/Header";
-import Container from "./components/Container/Container";
+import Navigation from "./components/Navigation/Navigation";
+import PageContent from "./components/PageContent/PageContent";
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <Container />
+      <div className="main-container">
+        <Navigation />
+        <PageContent />
+      </div>
     </div>
   );
 };
