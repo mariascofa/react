@@ -4,9 +4,9 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import { HOME, SMILE, TODO } from "./constants/routes";
-import Smile from "./components/content_components/Smile/Smile";
-import Todo from "./components/content_components/Todo/Todo";
-import Welcome from "./components/content_components/Welcome/Welcome";
+import Smile from "./pages/Smile/Smile";
+import Todo from "./pages/Todo/Todo";
+import Welcome from "./pages/Welcome/Welcome";
 
 const router = createBrowserRouter([
   {

@@ -1,0 +1,21 @@
+button {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    width: 110px;
+    margin: 20px;
+    height: 50px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: rgb(99, 77, 120);
+  }
+  
+.task-input {
+    padding: 10px;
+    width: 600px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
