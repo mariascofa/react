@@ -18,12 +18,19 @@ class Todo extends Component {
     }
   };
 
+
   changeStatus = (index) => {
-    const updatedTasks = [...this.state.tasks];
-    updatedTasks[index].status = !updatedTasks[index].status;
+    const updatedTasks = this.state.tasks.map((task_item, i) => {
+      if (i === index) {
+        return { task: task_item.task, status: !task_item.status };
+      }
+      return task_item;
+    });
+  
     const sortedTasks = updatedTasks.sort(this.compareByCompleted);
     this.setState({ tasks: sortedTasks });
   };
+  
 
   handleChange = (e) => {
     this.setState({ inputValue: e.target.value });
