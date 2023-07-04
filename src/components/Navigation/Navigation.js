@@ -1,7 +1,7 @@
 import "./navigation.css";
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {HOME, SMILE, TODO} from  '../../constants/routes';
+import {HOME, SMILE, TODO, ALBUMS} from  '../../constants/routes';
 
 const Navigation = () => {
   return (
@@ -15,6 +15,9 @@ const Navigation = () => {
         </li>
         <li>
         <Link to={TODO}>Todo</Link>
+        </li>
+        <li>
+        <Link to={ALBUMS}>Albums</Link>
         </li>
       </ul>
     </div>
