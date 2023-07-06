@@ -14,6 +14,7 @@ code {
 
 .main-container {
   display: flex;
+  min-height: 100vh;
   background-color: rgb(177, 177, 177);
 }
 
@@ -23,4 +24,19 @@ code {
   justify-content: center; 
   align-items: center; 
   text-align: center;
+  min-height: 100vh;
+}
+
+
+button {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  width: 210px;
+  margin: 20px;
+  height: 50px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: rgb(99, 77, 120);
 }

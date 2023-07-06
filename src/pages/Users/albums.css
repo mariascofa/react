@@ -1,0 +1,26 @@
+.album {
+    list-style-type: none;
+}
+
+.photo_btn {
+    width: 160px;
+    background-color: rgb(117, 181, 26);
+    box-shadow: 0 12px 14px #5b67e833;
+}
+
+.photo_close_btn {
+    width: 160px;
+    background-color: rgba(118, 161, 187, 0.824);
+    box-shadow: 0 12px 14px #5b67e833;
+}
+
+.album-container {
+    background-color: white;
+    padding: 30px;
+    display: inline-block;
+    max-width: 100%;
+    min-width: 600px;
+    word-break: break-word;
+    border-radius: 10px;
+    box-shadow: 0 12px 14px #78c93633;
+  }
