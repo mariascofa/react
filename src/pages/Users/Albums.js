@@ -1,8 +1,20 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import "./albums.css";
 import Photo from "./Photo";
 
 const Albums = ({ albumInfo, id, closeFunction, setAlbum }) => {
+  const [photoArray, setPhotoInfo] = useState([]);
+  useEffect(() => {
+    try {
+      fetch("https://jsonplaceholder.typicode.com/photos")
+        .then((resp) => resp.json())
+        .then((resp) => {
+           setPhotoInfo(resp);
+        });
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);
 
   const updatePhotoStatus = (photoId) => {
     const updatedArray = albumInfo.map((obj) => {
@@ -29,8 +41,9 @@ const Albums = ({ albumInfo, id, closeFunction, setAlbum }) => {
 
               {element.photo_status ? (
                 <Photo 
-                closBtn = {updatePhotoStatus}
-                album = {element}
+                closeBtn={updatePhotoStatus} 
+                album={element} 
+                photoArray={photoArray} 
                 />
               ) : (
                 <button

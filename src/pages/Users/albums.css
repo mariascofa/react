@@ -1,26 +1,51 @@
 .album {
     list-style-type: none;
-}
-
+    
+  }
+  
 .photo_btn {
     width: 160px;
     background-color: rgb(117, 181, 26);
     box-shadow: 0 12px 14px #5b67e833;
-}
-
-.photo_close_btn {
+  }
+  
+  .photo_close_btn {
     width: 160px;
     background-color: rgba(118, 161, 187, 0.824);
     box-shadow: 0 12px 14px #5b67e833;
-}
-
+  }
+  
 .album-container {
     background-color: white;
     padding: 30px;
+    min-height: 100vh;
     display: inline-block;
-    max-width: 100%;
-    min-width: 600px;
+    max-width: 1000px;
+    min-width: 800px;
     word-break: break-word;
     border-radius: 10px;
     box-shadow: 0 12px 14px #78c93633;
   }
+
+.photo_container {
+    padding: 60px;
+  }
+
+
+.slick-slide img {
+    max-width: 400px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  
+
+/* Optional: Modify arrow color */
+.slick-prev:before {
+  color: rgb(128, 60, 187) !important;
+  font-size: 35px !important;
+}
+
+.slick-next:before {
+  color: rgb(128, 60, 187) !important;
+  font-size: 35px !important;
+}

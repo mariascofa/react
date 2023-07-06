@@ -5,6 +5,8 @@ import Albums from "./Albums";
 const Users = () => {
   const [users, setUsers] = useState([]);
   const [albumInfo, setAlbumInfo] = useState([]);
+
+  
   useEffect(() => {
     try {
       fetch("https://jsonplaceholder.typicode.com/users")
