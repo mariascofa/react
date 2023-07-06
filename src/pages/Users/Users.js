@@ -5,8 +5,8 @@ import Albums from "./Albums";
 const Users = () => {
   const [users, setUsers] = useState([]);
   const [albumInfo, setAlbumInfo] = useState([]);
+  const [photoArray, setPhotoInfo] = useState([]);
 
-  
   useEffect(() => {
     try {
       fetch("https://jsonplaceholder.typicode.com/users")
@@ -43,6 +43,19 @@ const Users = () => {
     }
   }, []);
 
+  const closeUsersAlbums = (closedAlbums) => {
+    const updatedArray = albumInfo.map((album) => {
+      if (closedAlbums.includes(album.userId) && album.photo_status) {
+        return {
+          ...album,
+          photo_status: !album.photo_status,
+        };
+      }
+      return album;
+    });
+    setAlbumInfo(updatedArray);
+  };
+
   const handleChange = (id) => {
     const updatedArray = users.map((obj) => {
       if (obj.id === id) {
@@ -54,8 +67,13 @@ const Users = () => {
       return obj;
     });
     setUsers(updatedArray);
-  };
 
+    const usersAlbumsId = users
+      .filter((obj) => obj.id === id)
+      .map((obj) => obj.id);
+
+    closeUsersAlbums(usersAlbumsId);
+  };
 
   return (
     <div>
@@ -71,6 +89,8 @@ const Users = () => {
                 id={user.id}
                 closeFunction={handleChange}
                 setAlbum={setAlbumInfo}
+                photoArray={photoArray}
+                setPhotoInfo={setPhotoInfo}
               />
             ) : (
               <button onClick={() => handleChange(user.id)}>Albums</button>

@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import "./albums.css";
 import Photo from "./Photo";
 
-const Albums = ({ albumInfo, id, closeFunction, setAlbum }) => {
-  const [photoArray, setPhotoInfo] = useState([]);
+const Albums = ({ albumInfo, id, closeFunction, setAlbum, photoArray, setPhotoInfo }) => {
   useEffect(() => {
     try {
       fetch("https://jsonplaceholder.typicode.com/photos")

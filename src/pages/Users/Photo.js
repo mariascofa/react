@@ -4,14 +4,24 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./albums.css";
 
+const PrevArrow = (props) => {
+  const { className, onClick } = props;
+  return <div className={className} onClick={onClick}></div>;
+};
+
+const NextArrow = (props) => {
+  const { className, onClick } = props;
+  return <div className={className} onClick={onClick}></div>;
+};
+
 const Photo = ({ closeBtn, album, photoArray }) => {
-    const sliderSettings = {
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: <div className="slick-prev"></div>,
-        nextArrow: <div className="slick-next"></div>
-      };
+  const sliderSettings = {
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: <PrevArrow className="slick-prev" />,
+    nextArrow: <NextArrow className="slick-next" />,
+  };
 
   return (
     <div className="photo_container">
