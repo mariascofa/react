@@ -1,7 +1,7 @@
 import "./navigation.css";
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {HOME, SMILE, TODO, USERS} from  '../../constants/routes';
+import {HOME, SMILE, TODO, USERS, CONTACTS} from  '../../constants/routes';
 
 const Navigation = () => {
   return (
@@ -18,6 +18,9 @@ const Navigation = () => {
         </li>
         <li>
         <Link to={USERS}>Users</Link>
+        </li>
+        <li>
+        <Link to={CONTACTS}>Contacts</Link>
         </li>
       </ul>
     </div>
